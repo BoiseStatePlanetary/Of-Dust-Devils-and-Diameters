@@ -284,32 +284,50 @@ Calculating the pressure gradient from this profile and equating it to the centr
     \dfrac{\Delta p}{2\rho} = \upsilon^2.\label{eqn:cyclostrophic_balance}
 \end{equation}
 
-The dust devil's pressure gradient influences the wind field and draws in air out to a distance $r = r_{\rm inf}$, the point at which the net turbulence and other frictional forces $f_{\rm fric}$ equal the pressure gradient:
+The dust devil's pressure gradient influences the wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 = \alpha\ n^2 R^2 \approx \upsilon\ R$ or 
 \begin{equation}
-    \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right)_{r_{\rm inf}} = f_{\rm fric}\label{eqn:pressure_balances_friction}
-\end{equation}
-
-Evaluating the pressure gradient at $r = r_{\rm inf}$ and assuming $r_{\rm inf} \gg R$ gives
-\begin{equation}
-    2 \left( \dfrac{\Delta p}{\rho} \right) r_{\rm inf}^{-3}\ R^2 \approx f_{\rm fric},
-\end{equation}
-or 
-\begin{equation}
-    r_{\rm inf} \approx \left( \dfrac{2 \Delta p}{\rho\ f_{\rm fric}} \right)^{1/3}\ R^{2/3}. \label{eqn:r_inf}
-\end{equation}
-
-In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 \approx \upsilon\ R$ or 
-\begin{equation}
-    \upsilon \approx \dfrac{\alpha\ r_{\rm inf}^2}{R} = \alpha \left( \dfrac{2 \Delta p}{\rho\ f_{\rm fric}} \right)^{2/3} R^{1/3}.
+    \upsilon \approx \alpha n R^
 \end{equation}
 
 Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \begin{equation}
-    R \approx \alpha^{-3} f_{\rm fric}^2 \left( \dfrac{\Delta p }{\rho}\right)^{-1/2},\label{eqn:final_R}
+    R \approx \alpha^{-1} n^{-1} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
 \end{equation}
 neglecting terms of order unity.
 
-\bibliography{sample63}{}
+Next, we want to express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} gave an expression for $\Delta p$:
+\begin{equation}
+    \Delta p = p_{\infty} \left\{ 1 - \exp \left[ \left( \dfrac{\gamma \eta}{\gamma \eta - 1}\right) \left(\dfrac{1}{\chi}\right) \left( \dfrac{\Delta T}{T_{\infty}}\right) \right] \right\}\label{eqn:Renno_Delta-p},
+\end{equation}{}
+where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$, $\gamma$ is the fraction of total dissipation of mechanical within the dust devil consumed by friction near the surface, and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency and is given by 
+\begin{equation}
+    \eta = \dfrac{T_{\rm h} - T_{\rm c}}{T_{\rm h}}\label{eqn:Renno_eta},
+\end{equation}{}
+where $T_{\rm h}$ is the entropy-weighted mean temperature near the surface where heat is absorbed, and $T_{\rm c}$ is the same for the cold sink at the top of the dust devil, which is typically some fraction of the boundary layer \citep{2015Icar..260..246F}. Estimates of $\eta$ based on field observations suggest $\eta \lesssim 0.1$ \citep[e.g.][]{2000JGR...105.1859R}. A useful approximation gives $T_{\rm h} \approx T_\infty$, while
+\begin{equation}
+    T_{\rm c} = \left[ \dfrac{ p_\infty^{\chi + 1} - p_{c}^{\chi + 1} }{\left( p_\infty - p_{c} \right) \left( \chi + 1\right) p_\infty^{\chi + 1}} \right],\label{eqn:Tc}
+\end{equation}{} 
+$p_{\rm c}$ is the pressure near the top of the dust devil and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp{-h/H}$, where $h$ is the height of the dust devil and $H$ is the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
+
+We can plug these expressions into Equation \ref{eqn:Renno_eta} and expand about small $h/H$:
+\begin{equation}
+    \eta \approx \frac{1}{2} \chi \left( \dfrac{h}{H} \right).\label{eqn:approx_eta}
+\end{equation}{}
+In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure XX shows the resulting dependence of $\eta$ on $h/H$ for arbitrary values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and expand about small $h/H$, giving
+\begin{equation}
+    \Delta p \approx \left( \dfrac{\gamma R_\star \rho \Delta T}{2} \right) \left( \dfrac{h}{H} \right) \label{eqn:approx_Delta-p},
+\end{equation}
+with $p_\infty T_\infty = R_\star \rho$.
+
+Since their radii $R$ depend on the scale of the pressure perturbation, which itself depends on $\eta$, we can write a relationship between $R$ and $h$:
+\begin{equation}
+    R \approx \alpha^{-1} n^{-1} \left( \dfrac{\gamma R_\star \Delta T}{H} \right)^{1/2}\ h^{1/2},\label{eqn:R_vs_h}
+\end{equation}{}
+with factors of order unity neglected.
+
+
+
+\bibliography{sample63}
 \bibliographystyle{aasjournal}
 
 %% This command is needed to show the entire author+affiliation list when
