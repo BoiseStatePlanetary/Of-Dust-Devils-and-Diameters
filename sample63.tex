@@ -162,6 +162,9 @@
 %% This is the end of the preamble.  Indicate the beginning of the
 %% manuscript itself with \begin{document}.
 
+\usepackage{amsmath}
+\usepackage{amssymb}
+
 \begin{document}
 
 \title{Of Dust Devils and Diameters}
@@ -264,7 +267,47 @@ miscellaneous --- catalogs --- surveys}
 
 \section{Model} \label{sec:model}
 
+At the dust devil's eyewall, the pressure gradient force very nearly equals the centrifugal force:
+\begin{equation}
+    \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right) = \dfrac{\upsilon^2}{R},
+\end{equation}
+where $\rho$ is the density, $p$ the pressure, $r$ radial distance from the devil's center, $upsilon$ the tangential velocity, and $R$ the devil's eyewall radius. 
 
+Dust devils have pressure structures resembling a Lorentz profile:
+\begin{equation}
+    p(r) = p_{\infty} - \dfrac{\Delta p}{1 + \left( ^r/_R \right)^2},\label{eqn:pressure_profile}
+\end{equation}
+where $p_{\infty}$ is the ambient pressure, and $\Delta p$ is the depth of the pressure perturbation at the devil's center.
+
+Calculating the pressure gradient from this profile and equating it to the centrifugal acceleration at $r = R$ gives
+\begin{equation}
+    \dfrac{\Delta p}{2\rho} = \upsilon^2.\label{eqn:cyclostrophic_balance}
+\end{equation}
+
+The dust devil's pressure gradient influences the wind field and draws in air out to a distance $r = r_{\rm inf}$, the point at which the net turbulence and other frictional forces $f_{\rm fric}$ equal the pressure gradient:
+\begin{equation}
+    \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right)_{r_{\rm inf}} = f_{\rm fric}\label{eqn:pressure_balances_friction}
+\end{equation}
+
+Evaluating the pressure gradient at $r = r_{\rm inf}$ and assuming $r_{\rm inf} \gg R$ gives
+\begin{equation}
+    2 \left( \dfrac{\Delta p}{\rho} \right) r_{\rm inf}^{-3}\ R^2 \approx f_{\rm fric},
+\end{equation}
+or 
+\begin{equation}
+    r_{\rm inf} \approx \left( \dfrac{2 \Delta p}{\rho\ f_{\rm fric}} \right)^{1/3}\ R^{2/3}. \label{eqn:r_inf}
+\end{equation}
+
+In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 \approx \upsilon\ R$ or 
+\begin{equation}
+    \upsilon \approx \dfrac{\alpha\ r_{\rm inf}^2}{R} = \alpha \left( \dfrac{2 \Delta p}{\rho\ f_{\rm fric}} \right)^{2/3} R^{1/3}.
+\end{equation}
+
+Using Equation \ref{eqn:cyclostrophic_balance}, we find
+\begin{equation}
+    R \approx \alpha^{-3} f_{\rm fric}^2 \left( \dfrac{\Delta p }{\rho}\right)^{-1/2},\label{eqn:final_R}
+\end{equation}
+neglecting terms of order unity.
 
 \bibliography{sample63}{}
 \bibliographystyle{aasjournal}
