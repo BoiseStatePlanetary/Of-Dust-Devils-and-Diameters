@@ -293,7 +293,7 @@ Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \begin{equation}
     R \approx \alpha^{-1} n^{-2} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
 \end{equation}
-neglecting terms of order unity.
+neglecting terms of order unity. This equation suggests the perhaps counter-intuitive result that $R$ \emph{decreases} with increasing angular momentum, $l$. However, larger $l$ also implies a larger centrifugal force at the devil eyewall. $R$ sets the magnitude of the pressure gradient at a given distance $r$, so a smaller $R$ provides the larger gradient required to balance the centrifugal force.
 
 Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggests
 \begin{equation}
@@ -316,12 +316,12 @@ We can plug these expressions into Equation \ref{eqn:Renno_eta} and expand about
 
 \begin{figure}
     \centering
-    \includegraphics{}
-    \caption{Caption}
-    \label{fig:my_label}
+    \includegraphics[width=\textwidth]{eta_vs_h-over-H.png}
+    \caption{Dust devil thermodynamic efficiency $\eta$ as a function of dust devil height $h$ normalized to the atmospheric scale height $H$. The solid, blue line shows the full behavior given by Equations \ref{eqn:Renno_eta} and \ref{eqn:Tc}, while the dashed, orange line shows a linear approximation.}
+    \label{fig:eta_vs_h-over-H}
 \end{figure}{}
 
-In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure XX shows the resulting dependence of $\eta$ on $h/H$ for arbitrary values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and expand about small $h/H$, giving
+In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure \ref{fig:eta_vs_h-over-H} shows the resulting dependence of $\eta$ on $h/H$ for arbitrary values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and expand about small $h/H$, giving
 \begin{equation}
     \Delta p \approx \left( \dfrac{\gamma R_\star \rho \Delta T}{2} \right) \left( \dfrac{h}{H} \right) \label{eqn:approx_Delta-p},
 \end{equation}
