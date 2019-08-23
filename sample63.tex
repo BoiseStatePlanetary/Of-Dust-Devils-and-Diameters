@@ -267,11 +267,11 @@ miscellaneous --- catalogs --- surveys}
 
 \section{Model} \label{sec:model}
 
-At the dust devil's eyewall, the pressure gradient force very nearly equals the centrifugal force:
+At the dust devil's eyewall, the pressure gradient force balance the centrifugal force:
 \begin{equation}
     \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right) = \dfrac{\upsilon^2}{R},
 \end{equation}
-where $\rho$ is the density, $p$ the pressure, $r$ radial distance from the devil's center, $upsilon$ the tangential velocity, and $R$ the devil's eyewall radius. 
+where $\rho$ is the density, $p$ the pressure, $r$ radial distance from the devil's center, $\upsilon$ the tangential velocity, and $R$ the devil's eyewall radius. 
 
 Dust devils have pressure structures resembling a Lorentz profile:
 \begin{equation}
@@ -286,16 +286,16 @@ Calculating the pressure gradient from this profile and equating it to the centr
 
 The dust devil's pressure gradient influences the wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 = \alpha\ n^2 R^2 \approx \upsilon\ R$ or 
 \begin{equation}
-    \upsilon \approx \alpha n R^
+    \upsilon \approx \alpha n^2 R
 \end{equation}
 
 Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \begin{equation}
-    R \approx \alpha^{-1} n^{-1} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
+    R \approx \alpha^{-1} n^{-2} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
 \end{equation}
 neglecting terms of order unity.
 
-Next, we want to express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} gave an expression for $\Delta p$:
+Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggests
 \begin{equation}
     \Delta p = p_{\infty} \left\{ 1 - \exp \left[ \left( \dfrac{\gamma \eta}{\gamma \eta - 1}\right) \left(\dfrac{1}{\chi}\right) \left( \dfrac{\Delta T}{T_{\infty}}\right) \right] \right\}\label{eqn:Renno_Delta-p},
 \end{equation}{}
@@ -303,16 +303,24 @@ where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat cap
 \begin{equation}
     \eta = \dfrac{T_{\rm h} - T_{\rm c}}{T_{\rm h}}\label{eqn:Renno_eta},
 \end{equation}{}
-where $T_{\rm h}$ is the entropy-weighted mean temperature near the surface where heat is absorbed, and $T_{\rm c}$ is the same for the cold sink at the top of the dust devil, which is typically some fraction of the boundary layer \citep{2015Icar..260..246F}. Estimates of $\eta$ based on field observations suggest $\eta \lesssim 0.1$ \citep[e.g.][]{2000JGR...105.1859R}. A useful approximation gives $T_{\rm h} \approx T_\infty$, while
+where $T_{\rm h}$ is the entropy-weighted mean temperature near the surface where heat is absorbed, and $T_{\rm c}$ is the same for the cold sink at the top of the dust devil. Estimates of $\eta$ based on field observations suggest $\eta \lesssim 0.1$ \citep[e.g.][]{2000JGR...105.1859R}. A useful approximation gives $T_{\rm h} \approx T_\infty$, while
 \begin{equation}
-    T_{\rm c} = \left[ \dfrac{ p_\infty^{\chi + 1} - p_{c}^{\chi + 1} }{\left( p_\infty - p_{c} \right) \left( \chi + 1\right) p_\infty^{\chi + 1}} \right],\label{eqn:Tc}
+    T_{\rm c} = \left[ \dfrac{ p_\infty^{\chi + 1} - p_{c}^{\chi + 1} }{\left( p_\infty - p_{c} \right) \left( \chi + 1\right) p_\infty^{\chi}} \right] T_{\rm h},\label{eqn:Tc}
 \end{equation}{} 
-$p_{\rm c}$ is the pressure near the top of the dust devil and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp{-h/H}$, where $h$ is the height of the dust devil and $H$ is the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
+$p_{\rm c}$ is the pressure near the top of the dust devil and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp\left(-h/H\right)$, where $h$ is the height of the dust devil and $H$ is the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
 
 We can plug these expressions into Equation \ref{eqn:Renno_eta} and expand about small $h/H$:
 \begin{equation}
     \eta \approx \frac{1}{2} \chi \left( \dfrac{h}{H} \right).\label{eqn:approx_eta}
 \end{equation}{}
+
+\begin{figure}
+    \centering
+    \includegraphics{}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}{}
+
 In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure XX shows the resulting dependence of $\eta$ on $h/H$ for arbitrary values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and expand about small $h/H$, giving
 \begin{equation}
     \Delta p \approx \left( \dfrac{\gamma R_\star \rho \Delta T}{2} \right) \left( \dfrac{h}{H} \right) \label{eqn:approx_Delta-p},
