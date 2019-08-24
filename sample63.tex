@@ -146,7 +146,7 @@
 %%
 %% If you wish, you may supply running head information, although
 %% this information may be modified by the editorial offices.
-\shorttitle{Of Dust Devils and Diameters}
+\shorttitle{Dust Devil Radii and Heights}
 \shortauthors{Jackson}
 %%
 %% You can add a light gray and diagonal water-mark to the first page 
@@ -167,7 +167,7 @@
 
 \begin{document}
 
-\title{Of Dust Devils and Diameters}
+\title{On the Relationship between Dust Devil Radii and Heights}
 
 %% LaTeX will automatically break titles if they run longer than
 %% one line. However, you may use \\ to force a line break if
@@ -266,89 +266,88 @@ miscellaneous --- catalogs --- surveys}
 %% to the KEY in the \bibitem in the reference list below. 
 
 \section{Model} \label{sec:model}
+For the analysis here, I assume a dust devil consists of a small steady-state convective plume with a radial pressure structure resembling a Lorentz profile and a velocity structure resembling a Rankine vortex \citep{2016SSRv..203..209K}. The eyewall of the dust devil occurs at the peak in the velocity profile at a well-defined distance $R$ from the convective center. Far from the dust devil center, the wind field carries angular momentum along the surface inward along horizontal flowlines. Turbulent drag along the surface dissipates some (but not all) of the mechanical energy, providing the frictional dissipation required to establish a steady-state \citep{1998JAtS...55.3244R}. Decades of field work corroborate this model in broad strokes \citep[e.g.][]{2016SSRv..203...39M}, but statistically robust and detailed in-situ measurements of active dust devil structures have not been done.
 
-At the dust devil's eyewall, the pressure gradient force balance the centrifugal force:
+At the dust devil's eyewall, cyclostrophic balance applies, and the pressure gradient force balance the centrifugal force:
 \begin{equation}
     \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right) = \dfrac{\upsilon^2}{R},
 \end{equation}
-where $\rho$ is the density, $p$ the pressure, $r$ radial distance from the devil's center, $\upsilon$ the tangential velocity, and $R$ the devil's eyewall radius. 
-
-Dust devils have pressure structures resembling a Lorentz profile:
+where $\rho$ is the atmospheric density near the surface, $p$ the pressure, $r$ radial distance from the devil's center, and $\upsilon$ the tangential velocity. The Lorentz profile gives the pressure structure:
 \begin{equation}
     p(r) = p_{\infty} - \dfrac{\Delta p}{1 + \left( ^r/_R \right)^2},\label{eqn:pressure_profile}
 \end{equation}
-where $p_{\infty}$ is the ambient pressure, and $\Delta p$ is the depth of the pressure perturbation at the devil's center.
-
-Calculating the pressure gradient from this profile and equating it to the centrifugal acceleration at $r = R$ gives
+where $p_{\infty}$ is the ambient pressure, and $\Delta p$ is the depth of the pressure perturbation at the devil's center. Calculating the pressure gradient from this profile and equating it to the centrifugal acceleration at $r = R$ gives
 \begin{equation}
     \dfrac{\Delta p}{2\rho} = \upsilon^2.\label{eqn:cyclostrophic_balance}
 \end{equation}
 
-The dust devil's pressure gradient influences the wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 = \alpha\ n^2 R^2 \approx \upsilon\ R$ or 
+The dust devil's pressure gradient influences the ambient wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is roughly conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 = \alpha\ n^2 R^2 \approx \upsilon\ R$ or 
 \begin{equation}
-    \upsilon \approx \alpha n^2 R
+    \upsilon \approx \alpha n^2 R.
 \end{equation}
+The appropriate value for $r_{\rm inf}$ (and therefore $n$) likely depends on the dust devil's properties and ambient conditions (e.g., wind shear, turbulent drag, etc.), the exact dependence is unclear. Aside from assuming $r_{\rm inf} \gg R$ (previous studies have suggested $n = 4-10$ -- \citealp{2001JAtS...58..927R}), I leave it unspecified.
 
 Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \begin{equation}
     R \approx \alpha^{-1} n^{-2} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
 \end{equation}
-neglecting terms of order unity. This equation suggests the perhaps counter-intuitive result that $R$ \emph{decreases} with increasing angular momentum, $l$. However, larger $l$ also implies a larger centrifugal force at the devil eyewall. $R$ sets the magnitude of the pressure gradient at a given distance $r$, so a smaller $R$ provides the larger gradient required to balance the centrifugal force.
+neglecting terms of order unity. This equation suggests the perhaps counter-intuitive result that $R$ \emph{decreases} with increasing angular momentum, $l$. However, larger $l$ implies a larger centrifugal force at the devil eyewall. $R$ sets the magnitude of the pressure gradient at a given distance $r$, so, for a given $\Delta p$, a smaller $R$ results in a larger pressure gradient, required to balance the centrifugal force.
 
-Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggests
+Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggest
 \begin{equation}
     \Delta p = p_{\infty} \left\{ 1 - \exp \left[ \left( \dfrac{\gamma \eta}{\gamma \eta - 1}\right) \left(\dfrac{1}{\chi}\right) \left( \dfrac{\Delta T}{T_{\infty}}\right) \right] \right\}\label{eqn:Renno_Delta-p},
-\end{equation}{}
-where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$, $\gamma$ is the fraction of total dissipation of mechanical within the dust devil consumed by friction near the surface, and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency and is given by 
+\end{equation}
+where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$, $\gamma$ is the fraction of total dissipation of mechanical within the dust devil consumed by friction near the surface, and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency, given by 
 \begin{equation}
     \eta = \dfrac{T_{\rm h} - T_{\rm c}}{T_{\rm h}}\label{eqn:Renno_eta},
 \end{equation}{}
 where $T_{\rm h}$ is the entropy-weighted mean temperature near the surface where heat is absorbed, and $T_{\rm c}$ is the same for the cold sink at the top of the dust devil. Estimates of $\eta$ based on field observations suggest $\eta \lesssim 0.1$ \citep[e.g.][]{2000JGR...105.1859R}. A useful approximation gives $T_{\rm h} \approx T_\infty$, while
 \begin{equation}
     T_{\rm c} = \left[ \dfrac{ p_\infty^{\chi + 1} - p_{c}^{\chi + 1} }{\left( p_\infty - p_{c} \right) \left( \chi + 1\right) p_\infty^{\chi}} \right] T_{\rm h},\label{eqn:Tc}
-\end{equation}{} 
-$p_{\rm c}$ is the pressure near the top of the dust devil and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp\left(-h/H\right)$, where $h$ is the height of the dust devil and $H$ is the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
+\end{equation}
+where $p_{\rm c}$ is the pressure near the top of the dust devil and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp\left(-h/H\right)$ with $H$ the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
 
 We can plug these expressions into Equation \ref{eqn:Renno_eta} and expand about small $h/H$:
 \begin{equation}
     \eta \approx \frac{1}{2} \chi \left( \dfrac{h}{H} \right).\label{eqn:approx_eta}
-\end{equation}{}
+\end{equation}
+In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure \ref{fig:eta_vs_h-over-H} shows how $\eta$ depends on $h/H$ for a wide range of values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and again expand about small $h/H$:
+\begin{equation}
+    \Delta p \approx \left( \dfrac{\gamma R_\star \rho \Delta T}{2} \right) \left( \dfrac{h}{H} \right) \label{eqn:approx_Delta-p},
+\end{equation}
+with $p_\infty T_\infty = R_\star \rho$.
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{eta_vs_h-over-H.png}
     \caption{Dust devil thermodynamic efficiency $\eta$ as a function of dust devil height $h$ normalized to the atmospheric scale height $H$. The solid, blue line shows the full behavior given by Equations \ref{eqn:Renno_eta} and \ref{eqn:Tc}, while the dashed, orange line shows a linear approximation.}
     \label{fig:eta_vs_h-over-H}
-\end{figure}{}
-
-In other words, for relatively short dust devils, the thermodynamic efficiency increases linearly with their heights. Figure \ref{fig:eta_vs_h-over-H} shows the resulting dependence of $\eta$ on $h/H$ for arbitrary values and confirms the linear behavior for small $h/H$. We can plug Equation \ref{eqn:approx_eta} into Equation \ref{eqn:Renno_Delta-p} and expand about small $h/H$, giving
-\begin{equation}
-    \Delta p \approx \left( \dfrac{\gamma R_\star \rho \Delta T}{2} \right) \left( \dfrac{h}{H} \right) \label{eqn:approx_Delta-p},
-\end{equation}
-with $p_\infty T_\infty = R_\star \rho$.
+\end{figure}
 
 Since their radii $R$ depend on the scale of the pressure perturbation, which itself depends on $\eta$, we can write a relationship between $R$ and $h$:
 \begin{equation}
     R \approx \alpha^{-1} n^{-1} \left( \dfrac{\gamma R_\star \Delta T}{H} \right)^{1/2}\ h^{1/2},\label{eqn:R_vs_h}
-\end{equation}{}
+\end{equation}
 with factors of order unity neglected.
 
 % Discuss how this equation is useful, given that you can't directly measure most of the parameters!
 
-Although Equation \ref{eqn:R_vs_h} provides a relationship between $R$ and $h$, it involves several parameters that are difficult or impossible to measure in practice. For instance, surveys of martian dust devils using space-based imagery (see Section \ref{sec:fitting}) can provide heights and radii, given sufficient resolution, but not the ambient wind shear in which a dust devil is embedded $\alpha$ or the magnitude of the temperature perturbation $\Delta T$.
+Although Equation \ref{eqn:R_vs_h} provides a relationship between $R$ and $h$, it involves several parameters that are difficult or impossible to measure in practice. For instance, surveys of martian dust devils using space-based imagery (see Section \ref{sec:fitting}) can provide heights and radii, given sufficient resolution, but not the ambient wind shear in which a dust devil is embedded $\alpha$ or the magnitude of the temperature perturbation $\Delta T$. However, we may expect that the unmeasured variables exhibit a range of values for any given $h$. With a sufficiently large population of dust devils, a model fit to the distribution of measured $R$ vs. $h$-values (along with accurate uncertainties) should recover the underlying relationship. Indeed, as I show below, a fit to results from a dust devil survey closely resembles Equation \ref{eqn:R_vs_h}.
 
 \section{Fitting the Model to Observational Data}
 \label{sec:fitting}
-Numerous surveys involving space-based imagery have provided measurements of dust devil properties. The most voluminous survey, \citet{2006JGRE..11112002C}, reports more than 11k active devils imaged by the narrow- and wide-angle instruments of the Mars Global Surveyor's Mars Orbital Camera but only reports devil occurrence, not their diameters and heights. Another comprehensive survey described in \citet{2008Icar..197...39S} provides estimates of diameters and heights for nearly 200 active devils using the Mars Express High Resolution Stereo Camera, which provided resolutions between $12.5$ and $25\,{\rm m\ px^{-1]}}$. The reported uncertainties on the diameters were typically $63\,{\rm m}$ and on the heights were typically $\ge 100\,{\rm m}$. I use these data to test Equation \ref{eqn:R_vs_h}, as shown in Figure \ref{fig:Fit_to_Stanzel_data}.
+Numerous surveys involving space-based imagery have provided measurements of dust devil properties. The most voluminous survey, \citet{2006JGRE..11112002C}, reports more than 11k active devils imaged by the narrow- and wide-angle instruments of the Mars Global Surveyor's Mars Orbital Camera but only reports devil occurrence, not their radii and heights. Another comprehensive survey described in \citet{2008Icar..197...39S} provides estimates of diameters and heights for nearly 200 active devils using the Mars Express High Resolution Stereo Camera, with image resolutions between $12.5$ and $25\,{\rm m\ px^{-1]}}$. The reported uncertainties on the diameters were typically $63\,{\rm m}$ and on the heights were typically $\ge 100\,{\rm m}$. I use these data, shown in Figure \ref{fig:Fit_to_Stanzel_data}, to test Equation \ref{eqn:R_vs_h}.
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Fit_to_Stanzel_data.png}
     \caption{The blue dots are dust devil heights $h$ and radii $R$ in kilometers reported in \citet{2008Icar..197...39S}. The solid, orange line shows the line for which the best-fit exponent (0.63) is allowed to float, while the dashed, green line fixes the exponent at $1/2$ as in Equation \ref{eqn:R_vs_h}.}
     \label{fig:Fit_to_Stanzel_data}
-\end{figure}{}
+\end{figure}
 
-To fit these data, I applied two different models. For the first (shown as the solid, orange line in Figure \ref{fig:Fit_to_Stanzel_data}), I assumed $R \propto h^\Gamma$, with $\Gamma$ allowed to float. For the second fit, I fixed $\Gamma = 1/2$, as in Equation \ref{eqn:R_vs_h}. (For both fits, I allowed the proportionality constant to float.)
+To fit these data, I applied two different models. For the first (shown as the solid, orange line in Figure \ref{fig:Fit_to_Stanzel_data}), I assumed $R \propto h^\Gamma$, with $\Gamma$ allowed to float. For the second fit, I fixed $\Gamma = 1/2$, as in Equation \ref{eqn:R_vs_h}. (For both fits, I allowed the proportionality constant to float.) Since both the ordinate and abscissa (radius and height, respectively) involve significant measurement uncertainties, I use the orthogonal distance regression algorithm \citep{odrref, scipy} to fit the model parameters.
+
+The best-fit $\Gamma = 0.63 \pm$
 
 \bibliography{sample63}
 \bibliographystyle{aasjournal}
