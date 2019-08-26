@@ -93,74 +93,15 @@
 \newcommand\latex{La\TeX}
 
 %% Reintroduced the \received and \accepted commands from AASTeX v5.2
-\received{June 1, 2019}
-\revised{January 10, 2019}
-\accepted{\today}
+\received{2019 Aug 28}
+% \revised{January 10, 2019}
+% \accepted{\today}
 %% Command to document which AAS Journal the manuscript was submitted to.
 %% Adds "Submitted to " the argument.
-\submitjournal{AJ}
+\submitjournal{Icarus}
 
-%% For manuscript that include authors in collaborations, AASTeX v6.3
-%% builds on the \collaboration command to allow greater freedom to 
-%% keep the traditional author+affiliation information but only show
-%% subsets. The \collaboration command now must appear AFTER the group
-%% of authors in the collaboration and it takes TWO arguments. The last
-%% is still the collaboration identifier. The text given in this
-%% argument is what will be shown in the manuscript. The first argument
-%% is the number of author above the \collaboration command to show with
-%% the collaboration text. If there are authors that are not part of any
-%% collaboration the \nocollaboration command is used. This command takes
-%% one argument which is also the number of authors above to show. A
-%% dashed line is shown to indicate no collaboration. This example manuscript
-%% shows how these commands work to display specific set of authors 
-%% on the front page.
-%%
-%% For manuscript without any need to use \collaboration the 
-%% \AuthorCollaborationLimit command from v6.2 can still be used to 
-%% show a subset of authors.
-%
-%\AuthorCollaborationLimit=2
-%
-%% will only show Schwarz & Muench on the front page of the manuscript
-%% (assuming the \collaboration and \nocollaboration commands are
-%% commented out).
-%%
-%% Note that all of the author will be shown in the published article.
-%% This feature is meant to be used prior to acceptance to make the
-%% front end of a long author article more manageable. Please do not use
-%% this functionality for manuscripts with less than 20 authors. Conversely,
-%% please do use this when the number of authors exceeds 40.
-%%
-%% Use \allauthors at the manuscript end to show the full author list.
-%% This command should only be used with \AuthorCollaborationLimit is used.
-
-%% The following command can be used to set the latex table counters.  It
-%% is needed in this document because it uses a mix of latex tabular and
-%% AASTeX deluxetables.  In general it should not be needed.
-%\setcounter{table}{1}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%% The following section outlines numerous optional output that
-%% can be displayed in the front matter or as running meta-data.
-%%
-%% If you wish, you may supply running head information, although
-%% this information may be modified by the editorial offices.
 \shorttitle{Dust Devil Radii and Heights}
 \shortauthors{Jackson}
-%%
-%% You can add a light gray and diagonal water-mark to the first page 
-%% with this command:
-%% \watermark{text}
-%% where "text", e.g. DRAFT, is the text to appear.  If the text is 
-%% long you can control the water-mark size with:
-%% \setwatermarkfontsize{dimension}
-%% where dimension is any recognized LaTeX dimension, e.g. pt, in, etc.
-%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\graphicspath{{./}{figures/}}
-%% This is the end of the preamble.  Indicate the beginning of the
-%% manuscript itself with \begin{document}.
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -168,55 +109,6 @@
 \begin{document}
 
 \title{On the Relationship between Dust Devil Radii and Heights}
-
-%% LaTeX will automatically break titles if they run longer than
-%% one line. However, you may use \\ to force a line break if
-%% you desire. In v6.3 you can include a footnote in the title.
-
-%% A significant change from earlier AASTEX versions is in the structure for 
-%% calling author and affiliations. The change was necessary to implement 
-%% auto-indexing of affiliations which prior was a manual process that could 
-%% easily be tedious in large author manuscripts.
-%%
-%% The \author command is the same as before except it now takes an optional
-%% argument which is the 16 digit ORCID. The syntax is:
-%% \author[xxxx-xxxx-xxxx-xxxx]{Author Name}
-%%
-%% This will hyperlink the author name to the author's ORCID page. Note that
-%% during compilation, LaTeX will do some limited checking of the format of
-%% the ID to make sure it is valid. If the "orcid-ID.png" image file is 
-%% present or in the LaTeX pathway, the OrcID icon will appear next to
-%% the authors name.
-%%
-%% Use \affiliation for affiliation information. The old \affil is now aliased
-%% to \affiliation. AASTeX v6.3 will automatically index these in the header.
-%% When a duplicate is found its index will be the same as its previous entry.
-%%
-%% Note that \altaffilmark and \altaffiltext have been removed and thus 
-%% can not be used to document secondary affiliations. If they are used latex
-%% will issue a specific error message and quit. Please use multiple 
-%% \affiliation calls for to document more than one affiliation.
-%%
-%% The new \altaffiliation can be used to indicate some secondary information
-%% such as fellowships. This command produces a non-numeric footnote that is
-%% set away from the numeric \affiliation footnotes.  NOTE that if an
-%% \altaffiliation command is used it must come BEFORE the \affiliation call,
-%% right after the \author command, in order to place the footnotes in
-%% the proper location.
-%%
-%% Use \email to set provide email addresses. Each \email will appear on its
-%% own line so you can put multiple email address in one \email call. A new
-%% \correspondingauthor command is available in V6.3 to identify the
-%% corresponding author of the manuscript. It is the author's responsibility
-%% to make sure this name is also in the author list.
-%%
-%% While authors can be grouped inside the same \author and \affiliation
-%% commands it is better to have a single author for each. This allows for
-%% one to exploit all the new benefits and should make book-keeping easier.
-%%
-%% If done correctly the peer review system will be able to
-%% automatically put the author and affiliation information from the manuscript
-%% and save the corresponding author the trouble of entering it by hand.
 
 \correspondingauthor{Brian Jackson}
 \email{bjackson@boisestate.edu}
@@ -239,16 +131,13 @@
 
 %% Mark off the abstract in the ``abstract'' environment. 
 \begin{abstract}
-
-Words
-
+The influence of dust devils on the martian atmosphere depends on their capacity to loft dust, which seems to depend on their wind profiles and footprint on the martian surface, i.e., on their radii, $R$. Previous work suggests the wind profile depends on a devil's thermodynamic efficiency, which scales with its height, $h$. However, the dependences of a devil's radius has remained unclear. Combining this previous work with simple assumptions about angular momentum conservation in dust devils predicts that $R \propto h^{1/2}$, and a model fit to observed radii and heights from a survey of martian dust devils using the Mars Express High Resolution Stereo Camera agrees reasonably well with this prediction. Other observational tests involving additional, statistically robust dust devil surveys and field measurements may further elucidate these relationships.
 \end{abstract}
 
 %% Keywords should appear after the \end{abstract} command. 
 %% See the online documentation for the full list of available subject
 %% keywords and the rules for their use.
-\keywords{editorials, notices --- 
-miscellaneous --- catalogs --- surveys}
+\keywords{Mars, atmosphere --- Mars, climate --- Mars, surface}
 
 %% From the front matter, we move on to the body of the paper.
 %% Sections are demarcated by \section and \subsection, respectively.
@@ -268,31 +157,31 @@ miscellaneous --- catalogs --- surveys}
 \section{Introduction} \label{sec:introduction}
 The martian atmosphere is dusty -- analyzing spectra collected by Mars Global Surveyor (MGS) Thermal Emission Spectrometer (TES), \citet{2004Icar..167..148S} found globally averaged dust infrared optical depths $\tau$ often exceed 0.15, comparable to LA's smog \citep{2007JGRD..11222S21R}, and large dust storms can drive $\tau$ to $\gg$ 1 \citep{2002Icar..157..259S}. The suspended aerosols absorb and scatter radiation, modifying the atmospheric heat budget. \citet{2002Icar..157..259S} estimated Mars' 2001 global dust storm drove atmospheric temperatures up by at least 40 K, and the perpetually suspended background haze provides warming of $\sim$ 10 K \citep{2004JGRE..10911006B}. Dust removal/deposition varies regionally \citep{2006JGRE..111.6008K}, and variations in polar deposition could alter the cap albedo and sublimation \citep{1995JGR...100.5501H}. Thus, the dust cycle is intimately woven into the fabric of Mars' climate.
 
-The martian dust cycle is driven in part by dust devils, convective vortices rendered visible by dust. At the core of a dust devil, surface heating results in positive temperature and negative pressure excursions, which fall off with radial distance, and the buoyant air ascends to roughly the top of the planetary boundary layer \citep{1998JAtS...55.3244R}, where the dust may be carried away by regional winds. Meanwhile, near the surface, surrounding air is drawn in, conserving vorticity and giving a tangential wind at a devil's eyewall. 
+The martian dust cycle is driven, in part, by dust devils, convective vortices rendered visible by dust. At the core of a dust devil, surface heating results in positive temperature and negative pressure excursions, which fall off with radial distance. The buoyant air ascends to roughly the top of the planetary boundary layer \citep{1998JAtS...55.3244R}, where the dust may be carried away by regional winds. Meanwhile, near the surface, surrounding air is drawn in, conserving vorticity and giving a tangential wind at a devil's eyewall. 
 
-Although devils clearly contribute to the atmospheric dust budget on Mars, exactly how much dust devils contribute remains highly uncertain. Based on imagery collected by the Spirit rover on Mars, \citet{2006JGRE..11112S09G} estimate that devils contribute only a tenth as much atmospheric dust as regional dust storms. A survey involving space-based imagery estimated devils are an important but perhaps not dominant source of dust \citep{2006JGRE..11112002C}. And \citet{2016SSRv..203...89F} suggest dust devils may contribute as much as 75\% of the total dust flux to the martian atmosphere. 
+Although devils clearly contribute to the atmospheric dust budget on Mars, exactly how much remains highly uncertain. Based on imagery collected by the Spirit rover on Mars, \citet{2006JGRE..11112S09G} estimated that devils contribute only a tenth as much atmospheric dust as regional dust storms. A survey involving space-based imagery estimated devils are an important but perhaps not dominant source of dust \citep{2006JGRE..11112002C}. And \citet{2016SSRv..203...89F} suggested dust devils may contribute as much as 75\% of the total dust flux to the martian atmosphere. 
 
-Key to resolving this uncertainty are an accurate assessment of the martian dust devil population and its dust-lifting potential. In this vein, ground-based surveys using the meteorological instruments on-board landers provide a powerful tool. These surveys involve sifting pressure time-series for the short-lived, negative pressure excursions that arise when a convective vortex passes near the lander \citep[e.g.][]{Ellehoj_2010, 2018Icar..299..308O}. These surveys have several advantages over imaging surveys -- pressure time-series are collected throughout the martian day, allowing for more accurate occurrence rate estimates; and they probe the internal structures of dust devils, providing important tests for physical models of dust devils \citep{2000JGR...105.1859R}. However, these surveys suffer from complex bias and selection effects \citep{2018Icar..299..166J}. Also, since the required wind speed data are almost always lacking, it is impossible to directly estimate the devils' physical sizes, required to estimate the areas over which devils lift dust and therefore their dust-lifting. On the other hand, space-based imaging surveys provide accurate assessment of dust devil sizes and dust-lifting \citep{2006JGRE..11112002C}, but image resolution usually limits detections to the largest and least common devils \citep{2009Icar..203..683L}. Moreover, the images alone reveal little to nothing regarding the devils' internal structure, pressure and temperature profiles, etc.
+Key to resolving this uncertainty is an accurate assessment of the martian dust devil population and its dust-lifting potential. In this vein, ground-based surveys using the meteorological instruments on-board landers provide a powerful tool. These surveys involve sifting pressure time-series for the short-lived, negative pressure excursions that arise when a convective vortex passes near the lander \citep[e.g.][]{Ellehoj_2010, 2018Icar..299..308O}. These surveys have several advantages over imaging surveys -- pressure time-series are often collected throughout the martian day, allowing for more accurate occurrence rate estimates; and they probe the internal structures of dust devils, providing important tests for physical models of dust devils \citep{2000JGR...105.1859R}. However, these surveys may suffer from complex bias and selection effects \citep{2018Icar..299..166J}. Also, since the required wind speed data are almost always lacking, it is impossible to directly estimate the devils' physical sizes, required to estimate the areas over which devils lift dust and therefore their dust-lifting. On the other hand, space-based imaging surveys provide accurate assessment of dust devil sizes and dust-lifting \citep{2006JGRE..11112002C}, but image resolution usually limits detections to the largest and least common devils \citep{2009Icar..203..683L}. Moreover, the images alone reveal little to nothing regarding the devils' internal structure, pressure, temperature, and wind profiles.
 
-To bridge this gap, I adapt previously developed thermodynamic models for dust devils, supplemented by simplified assumptions regarding their angular momenta, to derive scaling relations between dust devil radii, pressure profiles, wind speeds, and heights. The relations predict, for example, that the radius of a dust devil should scale with the square root of its height. They also predict how dust devil radii depend on environmental conditions such as wind shear and atmospheric scale height. I also compare the radius-height scaling to data from the imaging survey \citet{2008Icar..197...39S} and find reasonable agreement. Finally, I discuss possibilities for future work.
+To bridge this gap, I adapt previously developed thermodynamic models for dust devils, supplemented by simplified assumptions regarding their angular momenta, to derive scaling relations between dust devil radii, pressure profiles, wind speeds, and heights. The relations predict, for example, that the radius scales with the square root of a devil's height. They also predict how radius depends on environmental conditions such as wind shear and atmospheric scale height. I also compare the radius-height scaling to data from the imaging survey reported in \citet{2008Icar..197...39S} and find reasonable agreement. Finally, I discuss possibilities for future work.
 
 \section{Model} \label{sec:model}
 For the analysis here, I assume a dust devil consists of a small steady-state convective plume with a radial pressure structure resembling a Lorentz profile and a velocity structure resembling a Rankine vortex \citep{2016SSRv..203..209K}. The eyewall of the dust devil occurs at the peak in the velocity profile at a well-defined distance $R$ from the convective center. Far from the dust devil center, the wind field carries angular momentum along the surface inward along horizontal flowlines. Turbulent drag along the surface dissipates some (but not all) of the mechanical energy, providing the frictional dissipation required to establish a steady-state \citep{1998JAtS...55.3244R}. Decades of field work corroborate this model in broad strokes \citep[e.g.][]{2016SSRv..203...39M}, but statistically robust and detailed in-situ measurements of active dust devil structures have not been done.
 
-At the dust devil's eyewall, cyclostrophic balance applies, and the pressure gradient force balance the centrifugal force:
+At the dust devil's eyewall, cyclostrophic balance applies, and the pressure gradient force balances the centrifugal force:
 \begin{equation}
     \dfrac{1}{\rho}\left( \dfrac{dp}{dr} \right) = \dfrac{\upsilon^2}{R},
 \end{equation}
 where $\rho$ is the atmospheric density near the surface, $p$ the pressure, $r$ radial distance from the devil's center, and $\upsilon$ the tangential velocity. The Lorentz profile gives the pressure structure:
 \begin{equation}
-    p(r) = p_{\infty} - \dfrac{\Delta p}{1 + \left( ^r/_R \right)^2},\label{eqn:pressure_profile}
+    p(r) = p_{\infty} - \dfrac{\Delta p}{1 + \left( r/R \right)^2},\label{eqn:pressure_profile}
 \end{equation}
 where $p_{\infty}$ is the ambient pressure, and $\Delta p$ is the depth of the pressure perturbation at the devil's center. Calculating the pressure gradient from this profile and equating it to the centrifugal acceleration at $r = R$ gives
 \begin{equation}
     \dfrac{\Delta p}{2\rho} = \upsilon^2.\label{eqn:cyclostrophic_balance}
 \end{equation}
 
-The dust devil's pressure gradient influences the ambient wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha\ r_{\rm inf}^2$. Assuming this angular momentum is roughly conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha\ r_{\rm inf}^2 = \alpha\ n^2 R^2 \approx \upsilon\ R$ or 
+The dust devil's pressure gradient influences the ambient wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of dust devil radii out. In the presence of wind shear $\partial U/\partial x \equiv \alpha$, drawing in air from $r_{\rm inf}$ also brings in a specific angular momentum $l \approx \alpha r_{\rm inf}^2$. Assuming this angular momentum is roughly conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha r_{\rm inf}^2 = \alpha n^2 R^2 \approx \upsilon R$ or 
 \begin{equation}
     \upsilon \approx \alpha n^2 R.
 \end{equation}
@@ -304,11 +193,11 @@ Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \end{equation}
 neglecting terms of order unity. This equation suggests the perhaps counter-intuitive result that $R$ \emph{decreases} with increasing angular momentum, $l$. However, larger $l$ implies a larger centrifugal force at the devil eyewall. $R$ sets the magnitude of the pressure gradient at a given distance $r$, so, for a given $\Delta p$, a smaller $R$ results in a larger pressure gradient, required to balance the centrifugal force.
 
-Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggest
+Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggested
 \begin{equation}
     \Delta p = p_{\infty} \left\{ 1 - \exp \left[ \left( \dfrac{\gamma \eta}{\gamma \eta - 1}\right) \left(\dfrac{1}{\chi}\right) \left( \dfrac{\Delta T}{T_{\infty}}\right) \right] \right\}\label{eqn:Renno_Delta-p},
 \end{equation}
-where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$, $\gamma$ is the fraction of total dissipation of mechanical within the dust devil consumed by friction near the surface, and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency, given by 
+where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$, $\gamma$ is the fraction of mechanical energy dissipated by friction near the surface, and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency, given by 
 \begin{equation}
     \eta = \dfrac{T_{\rm h} - T_{\rm c}}{T_{\rm h}}\label{eqn:Renno_eta},
 \end{equation}{}
@@ -343,11 +232,11 @@ with factors of order unity neglected.
 
 % Discuss how this equation is useful, given that you can't directly measure most of the parameters!
 
-Although Equation \ref{eqn:R_vs_h} provides a relationship between $R$ and $h$, it involves several parameters that are difficult or impossible to measure in practice. For instance, surveys of martian dust devils using space-based imagery (see Section \ref{sec:fitting}) can provide heights and radii, given sufficient resolution, but not the ambient wind shear in which a dust devil is embedded $\alpha$ or the magnitude of the temperature perturbation $\Delta T$. However, we may expect that the unmeasured variables exhibit a range of values for any given $h$. With a sufficiently large population of dust devils, a model fit to the distribution of measured $R$ vs. $h$-values (along with accurate uncertainties) should recover the underlying relationship. Indeed, as I show below, a fit to results from a dust devil survey closely resembles Equation \ref{eqn:R_vs_h}.
+Although Equation \ref{eqn:R_vs_h} provides a relationship between $R$ and $h$, it involves several parameters that are difficult to measure in practice. For instance, surveys of martian dust devils using space-based imagery (see Section \ref{sec:fitting}) can provide heights and radii, given sufficient resolution, but not the ambient wind shear in which a dust devil is embedded $\alpha$ or the magnitude of the temperature perturbation $\Delta T$. However, we may expect that the unmeasured variables exhibit a range of values for any given $h$. With a sufficiently large population of dust devils, a model fit to the distribution of measured $R$- vs. $h$-values (along with accurate uncertainties) should recover the underlying relationship. Indeed, as I show below, a fit to results from a dust devil survey closely resembles Equation \ref{eqn:R_vs_h}.
 
 \section{Fitting the Model to Observational Data}
 \label{sec:fitting}
-Numerous surveys involving space-based imagery have provided measurements of dust devil properties. The most voluminous survey, \citet{2006JGRE..11112002C}, reports more than 11k active devils imaged by the narrow- and wide-angle instruments of the Mars Global Surveyor's Mars Orbital Camera but only reports devil occurrence, not their radii and heights. Another comprehensive survey described in \citet{2008Icar..197...39S} provides estimates of diameters and heights for nearly 200 active devils using the Mars Express High Resolution Stereo Camera, with image resolutions between $12.5$ and $25\,{\rm m\ px^{-1]}}$. The reported uncertainties on the diameters were typically $63\,{\rm m}$ and on the heights were typically $\ge 100\,{\rm m}$. I use these data, shown in Figure \ref{fig:Fit_to_Stanzel_data}, to test Equation \ref{eqn:R_vs_h}.
+Numerous surveys involving space-based imagery have provided measurements of dust devil properties. The most voluminous survey, \citet{2006JGRE..11112002C}, reports more than 11k active devils imaged by the narrow- and wide-angle instruments of the Mars Global Surveyor's Mars Orbital Camera but only reports devil occurrence, not their radii and heights. Another comprehensive survey described in \citet{2008Icar..197...39S} provides estimates of diameters and heights for nearly 200 active devils using the Mars Express High Resolution Stereo Camera, with image resolutions between $12.5$ and $25\,{\rm m\ px^{-1}}$. The reported uncertainties on the diameters were typically $63\,{\rm m}$ and on the heights were typically $\ge 100\,{\rm m}$. I use these data, shown in Figure \ref{fig:Fit_to_Stanzel_data}, to test Equation \ref{eqn:R_vs_h}.
 
 \begin{figure}
     \centering
@@ -360,21 +249,21 @@ To fit these data, I applied two different models. For the first (shown as the s
 
 The best-fit $\Gamma = 0.63 \pm 0.04$ is $3.5\sigma$ discrepant from the value predicted by Equation \ref{eqn:R_vs_h}. This disagreement may arise from several factors. Most importantly, Equation \ref{eqn:R_vs_h} involves several important simplifying assumptions, including that $n$ is independent of ambient conditions and a dust devil's properties and that $h$ is independent of $\Delta T$. In reality, a larger ambient wind shear can drive enhanced turbulent dissipation \citep{arya1988}, potentially giving rise to an inverse relationship between $n$ and $\alpha$. We also expect a positive correlation between $\Delta T$ and $h$, although the level to which a convective plume rises also depends on the ambient lapse rate. In any case, the fact that the best-fit $\Gamma$-value closely resembles the predicted value suggests these effects are not significant.
 
-The discrepancy may also arise from features of the survey itself. Although \citet{2008Icar..197...39S} give uncertainties for the diameters and heights, no details are provided regarding how they are determined, and so it is difficult to judge their accuracy. The exact value and uncertainties for $\Gamma$ depend sensitively on the measurement uncertainties. To demonstrate this, I artificially doubled the uncertainties on the diameters (but not on the heights) and found that the best-fit $\Gamma$-value can be made to agree with $1/2$, meaning even a small underestimate for the uncertainties can give discrepant results. Likewise the size of the surveyed population contributes to uncertainties on the model fit \citet{2015JGRE..120..401J}. I find that I can often retrieve a best-fit $\Gamma$ consistent with $1/2$ by randomly selecting different sub-sets of the reported diameter-height pairs half the size of the full survey, meaning a larger survey might have given a different $\Gamma$-value. These analyses highlight the importance of a robust assessment of measurement uncertainties and of using the largest sample size possible when exploring dust devil population statistics.
+The discrepancy may also arise from features of the survey itself. Although \citet{2008Icar..197...39S} give uncertainties for the diameters and heights, no details are provided regarding how they are determined, and so it is difficult to judge their accuracy. The exact value and uncertainties for $\Gamma$ depend sensitively on the measurement uncertainties. To demonstrate this dependence, I artificially doubled the uncertainties on the diameters (but not on the heights) and found that the best-fit $\Gamma$-value can be made to agree with $1/2$, meaning even a modest underestimate for the uncertainties can give discrepant results. Likewise the size of the surveyed population contributes to uncertainties on the model fit \citep{2015JGRE..120..401J}. By randomly selecting many different sub-sets of the reported diameter-height pairs half the size of the full survey, I find that I can often retrieve a best-fit $\Gamma$ consistent with $1/2$, meaning a larger survey might have given a different $\Gamma$-value. These analyses highlight the importance of a robust assessment of measurement uncertainties and of using the largest sample size possible when exploring dust devil population statistics.
 
-\section{Discussion and Conclusions}
-\label{sec:discussion}
+\section{Conclusions}
+\label{sec:conclusions}
+Additional work can test this model. Probes of active dust devils to explore internal structures and dust abundances, such as the work with instrumented drones described in \citet{2018RemS...10...65J}, would provide the most direct test of the scaling relationships described here. The arguments above also suggest a image survey to recover a larger population of dust devils with a detailed assessment of uncertainties could clarify the radius-height relationship. In fact, the population of dust devils identified but not measured in the survey reported in \citet{2006JGRE..11112002C} might be ideally suited.
 
-Equation \ref{eqn:R_vs_h} also allows us to estimate the eyewall velocity from a dust devil's height:
+The scalings here suggest other relationships that can be tested. For instances, Equation \ref{eqn:R_vs_h} allows us to estimate the eyewall velocity from a dust devil's height:
 \begin{equation}
     \upsilon \approx \frac{1}{2} \left( \dfrac{\gamma R_\star \Delta T}{H} \right)^{1/2} h^{1/2},\label{eqn:velocity_vs_h}
 \end{equation}
-which, except for the scale height, is independent of ambient conditions (assuming they are suitable for dust devil formation). This equation suggest a few observational tests for the model presented here:
-\begin{enumerate}
-    \item The momentum and therefore dust flux carried by a wind of speed $\upsilon$ scale as $\rho \upsilon^2 \propto h$. 
-\end{enumerate}
+which, except for the scale height, is independent of ambient conditions (assuming they are suitable for dust devil formation). The momentum and therefore dust flux carried by a wind of speed $\upsilon$ scale as $\rho \upsilon^2$. This dust flux is transported around the circumference of the dust devil in an amount of time $2\pi R/\upsilon$. At steady state, the column abundance of dust and therefore optical depth ought to scale as $\upsilon R \propto h$. Of course, the actual dust content of a devil will also depend on the availability of dust in the region it forms, but with a large enough population, the underlying dependence on $h$ may be apparent. 
 
-\bibliography{sample63}
+A more indirect test would be to compare the distribution of diameters measured by imagery surveys to the pressure profiles observed by martian landers. However, such an analysis may require a scheme to account for the biases of these lander surveys \citep{2018Icar..299..166J, 2019Icar..317..209K}. More challenging but perhaps enlightening might be measurements of ambient wind shear and its influence on dust devils \citep{arya1988}.
+
+\bibliography{main}
 \bibliographystyle{aasjournal}
 
 %% This command is needed to show the entire author+affiliation list when
