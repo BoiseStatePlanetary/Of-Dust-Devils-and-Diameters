@@ -166,7 +166,7 @@ where $p_{\infty}$ is the ambient pressure, and $\Delta p$ is the depth of the p
     \dfrac{\Delta p}{2\rho} = \upsilon^2.\label{eqn:cyclostrophic_balance}
 \end{equation}
 
-The dust devil's pressure gradient influences the ambient wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of radii out. If the ambient wind field has a lateral wind shear $\alpha \equiv \partial U/\partial x$, there will be a difference in velocity {\bf from one side of the devil to the other} for the incoming air, $\Delta U \approx \alpha r_{\rm inf}$, {\bf which neglects factors of order unity}. The attendant specific angular momentum $l$ can be estimated by multiplying this velocity difference by the lever arm $r_{\rm inf}$, i.e. $l \approx \alpha r_{\rm inf}^2$. Assuming this angular momentum is roughly conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha r_{\rm inf}^2 = \alpha n^2 R^2 \approx \upsilon R$ or 
+The dust devil's pressure gradient influences the ambient wind field and draws in air out to a distance $r = r_{\rm inf} = n R$, i.e. some number of radii out. If the ambient wind field has a lateral wind shear $\alpha \equiv \partial U/\partial x$, there will be a difference in velocity from one side of the devil to the other for the incoming air, $\Delta U \approx \alpha r_{\rm inf}$, which neglects factors of order unity. The attendant specific angular momentum $l$ can be estimated by multiplying this velocity difference by the lever arm $r_{\rm inf}$, i.e. $l \approx \alpha r_{\rm inf}^2$. Assuming this angular momentum is roughly conserved as the fluid travels from $r_{\rm inf}$ to $R$ implies $\alpha r_{\rm inf}^2 = \alpha n^2 R^2 \approx \upsilon R$ or 
 \begin{equation}
     \upsilon \approx \alpha n^2 R.
 \end{equation}
@@ -176,13 +176,13 @@ Using Equation \ref{eqn:cyclostrophic_balance}, we find
 \begin{equation}
     R \approx \alpha^{-1} n^{-2} \left( \dfrac{\Delta p}{\rho} \right)^{1/2},\label{eqn:R_vs_Delta-p}
 \end{equation}
-{\bf again} neglecting {\bf factors} of order unity. 
+again neglecting factors of order unity. 
 
 Next, we can express the radius in terms of the dust devil height $h$. \citet{1998JAtS...55.3244R} suggested
 \begin{equation}
     \Delta p = p_{\infty} \left\{ 1 - \exp \left[ \left( \dfrac{\gamma \eta}{\gamma \eta - 1}\right) \left(\dfrac{1}{\chi}\right) \left( \dfrac{\Delta T}{T_{\infty}}\right) \right] \right\}\label{eqn:Renno_Delta-p},
 \end{equation}
-where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$ {\bf and is equal to 0.22 \citep{2000JGR...105.1859R}}{\bf;} $\gamma$ is the fraction of mechanical energy dissipated by friction near the surface{\bf;} and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency, given by 
+where $\chi$ is the ratio of the gas constant $R_\star$ to the specific heat capacity at constant pressure $c_{\rm p}$ and is equal to 0.22 \citep{2000JGR...105.1859R}; $\gamma$ is the fraction of mechanical energy dissipated by friction near the surface; and $\Delta T$ the difference in temperature between the positive perturbation at the devil's center and the ambient temperature $T_\infty$. $\eta$ is the thermodynamic efficiency, given by 
 \begin{equation}
     \eta = \dfrac{T_{\rm h} - T_{\rm c}}{T_{\rm h}}\label{eqn:Renno_eta},
 \end{equation}{}
@@ -190,7 +190,7 @@ where $T_{\rm h}$ is the entropy-weighted mean temperature near the surface wher
 \begin{equation}
     T_{\rm c} = \left[ \dfrac{ p_\infty^{\chi + 1} - p_{c}^{\chi + 1} }{\left( p_\infty - p_{c} \right) \left( \chi + 1\right) p_\infty^{\chi}} \right] T_{\rm h},\label{eqn:Tc}
 \end{equation}
-where $p_{\rm c}$ is the pressure near the top of the dust devil  {\bf \citep{2000JGR...105.1859R}} and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp\left(-h/H\right)$ with $H$ the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
+where $p_{\rm c}$ is the pressure near the top of the dust devil  \citep{2000JGR...105.1859R} and is related to the surface pressure as $p_{\rm c} \approx p_\infty \exp\left(-h/H\right)$ with $H$ the atmospheric scale height. For Mars, $H \ge 10\,{\rm km}$, and, although dust devils are sometimes observed that tall, usually they are a few km or less in height \citep{2008Icar..197...39S}. 
 
 We can plug these expressions into Equation \ref{eqn:Renno_eta} and expand about small $h/H$:
 \begin{equation}
@@ -209,7 +209,7 @@ with $p_\infty/T_\infty = R_\star \rho$.
     \label{fig:eta_vs_h-over-H}
 \end{figure}
 
-Since $R$ depends on the scale of the pressure perturbation, which itself depends on $\eta$, we can write a relationship between $R$ and $h$ {\bf using Equation \ref{eqn:R_vs_Delta-p}}:
+Since $R$ depends on the scale of the pressure perturbation, which itself depends on $\eta$, we can write a relationship between $R$ and $h$ using Equation \ref{eqn:R_vs_Delta-p}:
 \begin{equation}
     R \approx \alpha^{-1} n^{-2} \left( \dfrac{\gamma R_\star \Delta T}{H} \right)^{1/2}\ h^{1/2},\label{eqn:R_vs_h}
 \end{equation}
@@ -234,24 +234,24 @@ To fit these data, I applied two different models. For the first (shown as the s
 
 The best-fit $\Gamma = 0.63 \pm 0.04$ is $3.5\sigma$ discrepant from the value predicted by Equation \ref{eqn:R_vs_h}. This disagreement may arise from several factors. Most importantly, Equation \ref{eqn:R_vs_h} involves several important simplifying assumptions, including that $n$ is independent of ambient conditions and a dust devil's properties and that $h$ is independent of $\Delta T$. In reality, a larger ambient wind shear can drive enhanced turbulent dissipation \citep{arya1988}, potentially giving rise to an inverse relationship between $n$ and $\alpha$. We also expect a positive correlation between $\Delta T$ and $h$, although the level to which a convective plume rises also depends on the ambient lapse rate. In any case, the fact that the best-fit $\Gamma$-value closely resembles the predicted value suggests these effects are not significant.
 
-The discrepancy may also arise from features of the survey itself. Although \citet{2008Icar..197...39S} give uncertainties for the diameters and heights, no details are provided regarding how they are determined, and so it is difficult to judge their accuracy. The exact value and {\bf uncertainty} for $\Gamma$ depend sensitively on the measurement uncertainties. To demonstrate this dependence, I artificially doubled the uncertainties on the diameters (but not on the heights) and found that the best-fit $\Gamma$-value can be made to agree with $1/2$, meaning even a modest underestimate for the uncertainties can give discrepant results. Likewise the size of the surveyed population contributes to uncertainties on the model fit \citep{2015JGRE..120..401J}. By randomly selecting many different sub-sets of the reported diameter-height pairs half the size of the full survey, I find that I can often retrieve a best-fit $\Gamma$ consistent with $1/2$, meaning a larger survey might have given a different $\Gamma$-value. These analyses highlight the importance of a robust assessment of measurement uncertainties and of using the largest sample size possible when exploring dust devil population statistics.
+The discrepancy may also arise from features of the survey itself. Although \citet{2008Icar..197...39S} give uncertainties for the diameters and heights, no details are provided regarding how they are determined, and so it is difficult to judge their accuracy. The exact value and uncertainty for $\Gamma$ depend sensitively on the measurement uncertainties. To demonstrate this dependence, I artificially doubled the uncertainties on the diameters (but not on the heights) and found that the best-fit $\Gamma$-value can be made to agree with $1/2$, meaning even a modest underestimate for the uncertainties can give discrepant results. Likewise the size of the surveyed population contributes to uncertainties on the model fit \citep{2015JGRE..120..401J}. By randomly selecting many different sub-sets of the reported diameter-height pairs half the size of the full survey, I find that I can often retrieve a best-fit $\Gamma$ consistent with $1/2$, meaning a larger survey might have given a different $\Gamma$-value. These analyses highlight the importance of a robust assessment of measurement uncertainties and of using the largest sample size possible when exploring dust devil population statistics.
 
 \section{Conclusions}
 \label{sec:conclusions}
 Additional work can test the model presented here. Probes of active dust devils to explore internal structures and dust abundances, such as the work with instrumented drones described in \citet{2018RemS...10...65J}, would provide the most direct test of the scaling relationships described here. The arguments above also suggest a image survey to recover a larger population of dust devils with a detailed assessment of uncertainties could clarify the radius-height relationship. In fact, the population of dust devils identified but not measured in the survey reported in \citet{2006JGRE..11112002C} might be ideally suited.
 
-The scalings here suggest other relationships that can be tested. For instances, {\bf combining Equations \ref{eqn:cyclostrophic_balance} and \ref{eqn:approx_Delta-p}} allows us to estimate the eyewall velocity from a dust devil's height:
+The scalings here suggest other relationships that can be tested. For instances, combining Equations \ref{eqn:cyclostrophic_balance} and \ref{eqn:approx_Delta-p} allows us to estimate the eyewall velocity from a dust devil's height:
 \begin{equation}
     \upsilon \approx \frac{1}{2} \left( \dfrac{\gamma R_\star \Delta T}{H} \right)^{1/2} h^{1/2},\label{eqn:velocity_vs_h}
 \end{equation}
-which, except for the scale height, is insensitive to ambient conditions (assuming they are suitable for dust devil formation). {\bf The momentum flux carried by a wind of speed $\upsilon$ scales as $\rho \upsilon^2$. Although the details of dust lifting can be complicated \citep[e.g.][]{1985wagp.book.....G}, once the grains are lifted, momentum conservation requires that their mass flux is proportional to the wind's momentum flux. The dust mass crossing an area oriented perpendicular to the flow in unit time is therefore proportional to $\upsilon^2$.} This dust flux is transported around the circumference of the dust devil in an amount of time $\tau = 2\pi R/\upsilon$. {\bf Thus, at steady-state, the total dust mass transported around the eyewall is proportional to $\upsilon^2\tau = \upsilon R \propto h$.} Of course, the actual dust content of a devil will also depend on the availability of dust in the region it forms, but with a large enough population, the underlying dependence on $h$ may be apparent. 
+which, except for the scale height, is insensitive to ambient conditions (assuming they are suitable for dust devil formation). The momentum flux carried by a wind of speed $\upsilon$ scales as $\rho \upsilon^2$. Although the details of dust lifting can be complicated \citep[e.g.][]{1985wagp.book.....G}, once the grains are lifted, momentum conservation requires that their mass flux is proportional to the wind's momentum flux. The dust mass crossing an area oriented perpendicular to the flow in unit time is therefore proportional to $\upsilon^2$. This dust flux is transported around the circumference of the dust devil in an amount of time $\tau = 2\pi R/\upsilon$. Thus, at steady-state, the total dust mass transported around the eyewall is proportional to $\upsilon^2\tau = \upsilon R \propto h$. Of course, the actual dust content of a devil will also depend on the availability of dust in the region it forms, but with a large enough population, the underlying dependence on $h$ may be apparent. 
 
 A more indirect test would be to compare the distribution of diameters measured by imagery surveys to the pressure profiles observed by martian landers. However, such an analysis may require a scheme to account for the biases of these lander surveys \citep{2018Icar..299..166J, 2019Icar..317..209K}. More challenging but perhaps enlightening might be measurements of ambient wind shear and its influence on dust devils \citep{arya1988}.
 
 If future work can refine or improve the relationships presented here, dust devils may serve as probes of martian meteorology and dust cycle. For instance, Equation \ref{eqn:R_vs_h} shows that, given a measured height, a devil's radius depends on the atmospheric scale height. As the martian atmosphere heats and cools during the day, the scale height waxes and wanes, and so the radius-height relationship, as probed at different times of day, should measurably shift and constrain the near-surface heat budget \citep{Martinez2017}. Optical depth for devils with a given (or a narrow range of) properties may vary from region to region, depending on the availability of dust \citep{2002JGRE..107.5042B}, and provide input to models of the dust cycle.
 
 \acknowledgments
-This work was supported by grant number 80NSSC19K0542 from NASA's Solar System Workings program.
+This work was supported by grant number 80NSSC19K0542 from NASA's Solar System Workings program and by a grant from the Idaho Space Grant Consortium. The data and models I used are available here - \href{https://github.com/BoiseStatePlanetary/Of-Dust-Devils-and-Diameters}{https://github.com/BoiseStatePlanetary/Of-Dust-Devils-and-Diameters}.
 
 \bibliography{main}
 \bibliographystyle{aasjournal}
