@@ -1,0 +1,148 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{Arya(1988)}]{arya1988}
+Arya, S. P.~S. 1988, Introduction to micrometeorology (Academic Press San
+  Diego), xxi, 307 p. :
+
+\bibitem[{{Bandfield}(2002)}]{2002JGRE..107.5042B}
+{Bandfield}, J.~L. 2002, Journal of Geophysical Research (Planets), 107, 5042,
+  \dodoi{10.1029/2001JE001510}
+
+\bibitem[{{Basu} {et~al.}(2004){Basu}, {Richardson}, \&
+  {Wilson}}]{2004JGRE..10911006B}
+{Basu}, S., {Richardson}, M.~I., \& {Wilson}, R.~J. 2004, Journal of
+  Geophysical Research (Planets), 109, E11006, \dodoi{10.1029/2004JE002243}
+
+\bibitem[{{Boggs} \& {Rogers}(1990)}]{odrref}
+{Boggs}, P.~T., \& {Rogers}, J.~E. 1990, in Statistical analysis of measurement
+  error models and applications: proceedings of the AMS-IMS-SIAM
+
+\bibitem[{{Cantor} {et~al.}(2006){Cantor}, {Kanak}, \&
+  {Edgett}}]{2006JGRE..11112002C}
+{Cantor}, B.~A., {Kanak}, K.~M., \& {Edgett}, K.~S. 2006, Journal of
+  Geophysical Research (Planets), 111, E12002, \dodoi{10.1029/2006JE002700}
+
+\bibitem[{Ellehoj {et~al.}(2010)Ellehoj, Gunnlaugsson, Taylor,
+  Kahanp\"{a}\"{a}, Bean, Cantor, Gheynani, Drube, Fisher, Harri,
+  Holstein-Rathlou, Lemmon, Madsen, Malin, Polkko, Smith, Tamppari, Weng, \&
+  Whiteway}]{Ellehoj_2010}
+Ellehoj, M.~D., Gunnlaugsson, H.~P., Taylor, P.~A., {et~al.} 2010, J. Geophys.
+  Res., 115, \dodoi{10.1029/2009je003413}
+
+\bibitem[{{Fenton} {et~al.}(2016){Fenton}, {Reiss}, {Lemmon}, {Marticorena},
+  {Lewis}, \& {Cantor}}]{2016SSRv..203...89F}
+{Fenton}, L., {Reiss}, D., {Lemmon}, M., {et~al.} 2016, \ssr, 203, 89,
+  \dodoi{10.1007/s11214-016-0243-6}
+
+\bibitem[{{Fenton} \& {Lorenz}(2015)}]{2015Icar..260..246F}
+{Fenton}, L.~K., \& {Lorenz}, R. 2015, 260, 246,
+  \dodoi{10.1016/j.icarus.2015.07.028}
+
+\bibitem[{{Greeley} \& {Iversen}(1985)}]{1985wagp.book.....G}
+{Greeley}, R., \& {Iversen}, J.~D. 1985, {Wind as a geological process on
+  Earth, Mars, Venus and Titan.}
+
+\bibitem[{{Greeley} {et~al.}(2006){Greeley}, {Whelley}, {Arvidson}, {Cabrol},
+  {Foley}, {Franklin}, {Geissler}, {Golombek}, {Kuzmin}, {Landis}, {Lemmon},
+  {Neakrase}, {Squyres}, \& {Thompson}}]{2006JGRE..11112S09G}
+{Greeley}, R., {Whelley}, P.~L., {Arvidson}, R.~E., {et~al.} 2006, Journal of
+  Geophysical Research (Planets), 111, E12S09, \dodoi{10.1029/2006JE002743}
+
+\bibitem[{{Hourdin} {et~al.}(1995){Hourdin}, {Forget}, \&
+  {Talagrand}}]{1995JGR...100.5501H}
+{Hourdin}, F., {Forget}, F., \& {Talagrand}, O. 1995, \jgr, 100, 5501,
+  \dodoi{10.1029/94JE03079}
+
+\bibitem[{{Jackson} \& {Lorenz}(2015)}]{2015JGRE..120..401J}
+{Jackson}, B., \& {Lorenz}, R. 2015, Journal of Geophysical Research (Planets),
+  120, 401, \dodoi{10.1002/2014JE004712}
+
+\bibitem[{{Jackson} {et~al.}(2018{\natexlab{a}}){Jackson}, {Lorenz}, \&
+  {Davis}}]{2018Icar..299..166J}
+{Jackson}, B., {Lorenz}, R., \& {Davis}, K. 2018{\natexlab{a}}, Icarus, 299,
+  166, \dodoi{10.1016/j.icarus.2017.07.027}
+
+\bibitem[{{Jackson} {et~al.}(2018{\natexlab{b}}){Jackson}, {Lorenz}, {Davis},
+  \& {Lipple}}]{2018RemS...10...65J}
+{Jackson}, B., {Lorenz}, R., {Davis}, K., \& {Lipple}, B. 2018{\natexlab{b}},
+  Remote Sensing, 10, 65, \dodoi{10.3390/rs10010065}
+
+\bibitem[{Jones {et~al.}(2001)Jones, Oliphant, Peterson, {et~al.}}]{scipy}
+Jones, E., Oliphant, T., Peterson, P., {et~al.} 2001, {SciPy}: Open source
+  scientific tools for {Python}.
+\newblock \url{http://www.scipy.org/}
+
+\bibitem[{{Kahre} {et~al.}(2006){Kahre}, {Murphy}, \&
+  {Haberle}}]{2006JGRE..111.6008K}
+{Kahre}, M.~A., {Murphy}, J.~R., \& {Haberle}, R.~M. 2006, Journal of
+  Geophysical Research (Planets), 111, E06008, \dodoi{10.1029/2005JE002588}
+
+\bibitem[{{Kurgansky}(2019)}]{2019Icar..317..209K}
+{Kurgansky}, M.~V. 2019, Icarus, 317, 209, \dodoi{10.1016/j.icarus.2018.08.004}
+
+\bibitem[{{Kurgansky} {et~al.}(2016){Kurgansky}, {Lorenz}, {Renno}, {Takemi},
+  {Gu}, \& {Wei}}]{2016SSRv..203..209K}
+{Kurgansky}, M.~V., {Lorenz}, R.~D., {Renno}, N.~O., {et~al.} 2016, \ssr, 203,
+  209, \dodoi{10.1007/s11214-016-0281-0}
+
+\bibitem[{{Lorenz}(2009)}]{2009Icar..203..683L}
+{Lorenz}, R.~D. 2009, Icarus, 203, 683, \dodoi{10.1016/j.icarus.2009.06.029}
+
+\bibitem[{Mart{\'i}nez {et~al.}(2017)Mart{\'i}nez, Newman,
+  De~Vicente-Retortillo, Fischer, Renno, Richardson, Fair{\'e}n, Genzer,
+  Guzewich, Haberle, Harri, Kemppinen, Lemmon, Smith, de la Torre-Ju{\'a}rez,
+  \& Vasavada}]{Martinez2017}
+Mart{\'i}nez, G.~M., Newman, C.~N., De~Vicente-Retortillo, A., {et~al.} 2017,
+  Space Science Reviews, 212, 295, \dodoi{10.1007/s11214-017-0360-x}
+
+\bibitem[{{Murphy} {et~al.}(2016){Murphy}, {Steakley}, {Balme}, {Deprez},
+  {Esposito}, {Kahanp{\"a}{\"a}}, {Lemmon}, {Lorenz}, {Murdoch}, {Neakrase},
+  {Patel}, \& {Whelley}}]{2016SSRv..203...39M}
+{Murphy}, J., {Steakley}, K., {Balme}, M., {et~al.} 2016, \ssr, 203, 39,
+  \dodoi{10.1007/s11214-016-0283-y}
+
+\bibitem[{{Ordonez-Etxeberria} {et~al.}(2018){Ordonez-Etxeberria}, {Hueso}, \&
+  {S{\'a}nchez-Lavega}}]{2018Icar..299..308O}
+{Ordonez-Etxeberria}, I., {Hueso}, R., \& {S{\'a}nchez-Lavega}, A. 2018,
+  Icarus, 299, 308, \dodoi{10.1016/j.icarus.2017.07.032}
+
+\bibitem[{{Ramanathan} {et~al.}(2007){Ramanathan}, {Li}, {Ramana}, {Praveen},
+  {Kim}, {Corrigan}, {Nguyen}, {Stone}, {Schauer}, {Carmichael}, {Adhikary}, \&
+  {Yoon}}]{2007JGRD..11222S21R}
+{Ramanathan}, V., {Li}, F., {Ramana}, M.~V., {et~al.} 2007, Journal of
+  Geophysical Research (Atmospheres), 112, D22S21, \dodoi{10.1029/2006JD008124}
+
+\bibitem[{{Renn{\'o}} \& {Bluestein}(2001)}]{2001JAtS...58..927R}
+{Renn{\'o}}, N.~O., \& {Bluestein}, H.~B. 2001, Journal of Atmospheric
+  Sciences, 58, 927, \dodoi{10.1175/1520-0469(2001)058<0927:ASTFW>2.0.CO;2}
+
+\bibitem[{{Renn{\'{o}}} {et~al.}(1998){Renn{\'{o}}}, {Burkett}, \&
+  {Larkin}}]{1998JAtS...55.3244R}
+{Renn{\'{o}}}, N.~O., {Burkett}, M.~L., \& {Larkin}, M.~P. 1998, Journal of
+  Atmospheric Sciences, 55, 3244
+
+\bibitem[{{Renn{\'{o}}} {et~al.}(2000){Renn{\'{o}}}, {Nash}, {Lunine}, \&
+  {Murphy}}]{2000JGR...105.1859R}
+{Renn{\'{o}}}, N.~O., {Nash}, A.~A., {Lunine}, J., \& {Murphy}, J. 2000, \\jgr,
+  105, 1859, \dodoi{10.1029/1999JE001037}
+
+\bibitem[{{Smith}(2004)}]{2004Icar..167..148S}
+{Smith}, M.~D. 2004, 167, 148, \dodoi{10.1016/j.icarus.2003.09.010}
+
+\bibitem[{{Smith} {et~al.}(2002){Smith}, {Conrath}, {Pearl}, \&
+  {Christensen}}]{2002Icar..157..259S}
+{Smith}, M.~D., {Conrath}, B.~J., {Pearl}, J.~C., \& {Christensen}, P.~R. 2002,
+  157, 259, \dodoi{10.1006/icar.2001.6797}
+
+\bibitem[{{Stanzel} {et~al.}(2008){Stanzel}, {P{\"a}tzold}, {Williams},
+  {Whelley}, {Greeley}, {Neukum}, \& {the HRSC Co-Investigator
+  Team}}]{2008Icar..197...39S}
+{Stanzel}, C., {P{\"a}tzold}, M., {Williams}, D.~A., {et~al.} 2008, \icarus,
+  197, 39, \dodoi{10.1016/j.icarus.2008.04.017}
+
+\end{thebibliography}
